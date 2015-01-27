@@ -57,5 +57,23 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Security" />
+    <Folder Include="Security\dbo" />
+    <Folder Include="Security\Sales" />
+    <Folder Include="Security\Person" />
+    <Folder Include="Security\Inventory" />
+    <Folder Include="Person" />
+    <Folder Include="Person\Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\Inventory\Inventory.sql" />
+    <Build Include="Security\Person\Person.sql" />
+    <Build Include="Security\Sales\Sales.sql" />
+    <Build Include="Person\Tables\Person.sql" />
+    <Build Include="Person\Tables\Salesperson.sql" />
+    <Build Include="Person\Tables\Customer.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SSDT_Team_Exercise_1.publish.xml" />
   </ItemGroup>
 </Project>
