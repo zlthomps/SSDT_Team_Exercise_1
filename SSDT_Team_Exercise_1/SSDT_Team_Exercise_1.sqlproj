@@ -65,6 +65,7 @@
     <Folder Include="Person" />
     <Folder Include="Person\Tables" />
     <Folder Include="Inventory" />
+    <Folder Include="Sales" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Inventory\Inventory.sql" />
@@ -77,6 +78,8 @@
     <Build Include="Inventory\Model.sql" />
     <Build Include="Inventory\Color.sql" />
     <Build Include="Inventory\Vehicle.sql" />
+    <Build Include="Sales\OpportunityType.sql" />
+    <Build Include="Sales\Opportunity.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SSDT_Team_Exercise_1.publish.xml" />

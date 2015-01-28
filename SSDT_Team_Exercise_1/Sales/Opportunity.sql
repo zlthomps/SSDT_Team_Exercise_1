@@ -1,0 +1,8 @@
+﻿CREATE TABLE [Sales].[Opportunity]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL CONSTRAINT PK_Opportunity_Id PRIMARY KEY DEFAULT NEWID(),
+	[CustomerId] UNIQUEIDENTIFIER NOT NULL CONSTRAINT FK_Opportunity_CustomerId_Customer_Id FOREIGN KEY REFERENCES Person.Customer(Id),
+	[VehicleId] UNIQUEIDENTIFIER NOT NULL CONSTRAINT FK_Opportunity_VehicleId_Vehicle_Id FOREIGN KEY REFERENCES Inventory.Vehicle(Id),
+	[OpportunityTypeId] UNIQUEIDENTIFIER NOT NULL CONSTRAINT FK_Opportunity_OpportunityTypeId_OpportunityType_Id FOREIGN KEY REFERENCES Sales.OpportunityType(Id),
+	[CreatedDate] DATETIME NOT NULL DEFAULT GETUTCDATE()
+) 
