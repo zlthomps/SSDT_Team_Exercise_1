@@ -1,0 +1,39 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       on [Person].[Salesperson].[isActive] (Default Constraint)
+     Create
+       [Inventory].[Color] (Table)
+       [Inventory].[Make] (Table)
+       [Inventory].[Model] (Table)
+       [Inventory].[Vehicle] (Table)
+       [Sales].[Opportunity] (Table)
+       [Sales].[OpportunityType] (Table)
+       Default Constraint on [Person].[Salesperson].[isActive] (Default Constraint)
+       Default Constraint on [Inventory].[Color].[Id] (Default Constraint)
+       Default Constraint on [Inventory].[Color].[CreatedDate] (Default Constraint)
+       Default Constraint on [Inventory].[Make].[Id] (Default Constraint)
+       Default Constraint on [Inventory].[Make].[CreatedDate] (Default Constraint)
+       Default Constraint on [Inventory].[Model].[Id] (Default Constraint)
+       Default Constraint on [Inventory].[Model].[CreatedDate] (Default Constraint)
+       Default Constraint on [Inventory].[Vehicle].[Id] (Default Constraint)
+       Default Constraint on [Sales].[Opportunity].[Id] (Default Constraint)
+       Default Constraint on [Sales].[Opportunity].[CreatedDate] (Default Constraint)
+       Default Constraint on [Sales].[OpportunityType].[Id] (Default Constraint)
+       [Inventory].[FK_Vehicle_MakeId_Make_Id] (Foreign Key)
+       [Inventory].[FK_Vehicle_ModelId_Model_Id] (Foreign Key)
+       [Inventory].[FK_Vehicle_ColorId_Color_Id] (Foreign Key)
+       [Sales].[FK_Opportunity_CustomerId_Customer_Id] (Foreign Key)
+       [Sales].[FK_Opportunity_VehicleId_Vehicle_Id] (Foreign Key)
+       [Sales].[FK_Opportunity_OpportunityTypeId_OpportunityType_Id] (Foreign Key)
+
+** Supporting actions
