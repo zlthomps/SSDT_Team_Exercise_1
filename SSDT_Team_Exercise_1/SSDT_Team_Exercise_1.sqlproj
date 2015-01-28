@@ -64,6 +64,7 @@
     <Folder Include="Security\Inventory" />
     <Folder Include="Person" />
     <Folder Include="Person\Tables" />
+    <Folder Include="Inventory" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Inventory\Inventory.sql" />
@@ -72,6 +73,10 @@
     <Build Include="Person\Tables\Person.sql" />
     <Build Include="Person\Tables\Salesperson.sql" />
     <Build Include="Person\Tables\Customer.sql" />
+    <Build Include="Inventory\Make.sql" />
+    <Build Include="Inventory\Model.sql" />
+    <Build Include="Inventory\Color.sql" />
+    <Build Include="Inventory\Vehicle.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SSDT_Team_Exercise_1.publish.xml" />
