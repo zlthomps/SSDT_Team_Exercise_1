@@ -1,0 +1,7 @@
+﻿CREATE TABLE [Person].[CustomerPhone]
+(
+	Id UNIQUEIDENTIFIER NOT NULL CONSTRAINT PK_CustomerPhone_Id DEFAULT NEWID(),
+	PhoneNumber NVARCHAR(25) NOT NULL,
+	CustomerId UNIQUEIDENTIFIER NOT NULL CONSTRAINT FK_CustomerPhone_CustomerId_Customer_Id FOREIGN KEY REFERENCES Person.Customer(Id),
+
+)

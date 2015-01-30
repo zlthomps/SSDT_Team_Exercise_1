@@ -86,6 +86,9 @@
     <Build Include="Person\Views\vw_Customers.sql" />
     <Build Include="Inventory\Views\vw_Vehicles.sql" />
     <Build Include="Sales\Procedures\usp_OpportunitiesByType.sql" />
+    <Build Include="Person\Tables\CustomerEmail.sql" />
+    <Build Include="Person\Tables\CustomerPhone.sql" />
+    <Build Include="Person\Tables\CustomerAddress.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SSDT_Team_Exercise_1.publish.xml" />

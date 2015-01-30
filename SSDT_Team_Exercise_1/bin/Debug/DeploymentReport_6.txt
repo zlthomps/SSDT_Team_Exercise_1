@@ -1,0 +1,56 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [Inventory] (Schema)
+       [Person] (Schema)
+       [Sales] (Schema)
+       [Inventory].[Vehicle] (Table)
+       [Inventory].[Color] (Table)
+       [Inventory].[Model] (Table)
+       [Inventory].[Make] (Table)
+       [Person].[Customer] (Table)
+       [Person].[Salesperson] (Table)
+       [Person].[Person] (Table)
+       [Person].[Person].[IX_Person_IndexId] (Index)
+       [Sales].[Opportunity] (Table)
+       [Sales].[OpportunityType] (Table)
+       Default Constraint on [Inventory].[Vehicle].[Id] (Default Constraint)
+       Default Constraint on [Inventory].[Color].[Id] (Default Constraint)
+       Default Constraint on [Inventory].[Color].[CreatedDate] (Default Constraint)
+       Default Constraint on [Inventory].[Model].[Id] (Default Constraint)
+       Default Constraint on [Inventory].[Model].[CreatedDate] (Default Constraint)
+       Default Constraint on [Inventory].[Make].[Id] (Default Constraint)
+       Default Constraint on [Inventory].[Make].[CreatedDate] (Default Constraint)
+       Default Constraint on [Person].[Customer].[Id] (Default Constraint)
+       Default Constraint on [Person].[Customer].[CreatedDate] (Default Constraint)
+       Default Constraint on [Person].[Salesperson].[Id] (Default Constraint)
+       Default Constraint on [Person].[Salesperson].[HiredDate] (Default Constraint)
+       Default Constraint on [Person].[Salesperson].[isActive] (Default Constraint)
+       Default Constraint on [Person].[Person].[Id] (Default Constraint)
+       Default Constraint on [Sales].[Opportunity].[Id] (Default Constraint)
+       Default Constraint on [Sales].[Opportunity].[CreatedDate] (Default Constraint)
+       Default Constraint on [Sales].[OpportunityType].[Id] (Default Constraint)
+       [Inventory].[FK_Vehicle_MakeId_Make_Id] (Foreign Key)
+       [Inventory].[FK_Vehicle_ModelId_Model_Id] (Foreign Key)
+       [Inventory].[FK_Vehicle_ColorId_Color_Id] (Foreign Key)
+       [Person].[FK_Customer_PersonId_Person_Id] (Foreign Key)
+       [Person].[FK_Customer_SalespersonId_Salesperson_Id] (Foreign Key)
+       [Person].[FK_Salesperson_PersonId_Person_Id] (Foreign Key)
+       [Sales].[FK_Opportunity_CustomerId_Customer_Id] (Foreign Key)
+       [Sales].[FK_Opportunity_VehicleId_Vehicle_Id] (Foreign Key)
+       [Sales].[FK_Opportunity_OpportunityTypeId_OpportunityType_Id] (Foreign Key)
+       [Person].[CK_Person_ValidateAge] (Check Constraint)
+       [Inventory].[vw_Vehicles] (View)
+       [Person].[vw_Customers] (View)
+       [Sales].[usp_OpportunitiesByType] (Procedure)
+
+** Supporting actions
