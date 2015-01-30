@@ -1,0 +1,30 @@
+﻿** Warnings
+     The object reference [Sales].[Opportunity].[id] differs only by case from the object definition
+       [Sales].[Opportunity].[Id].
+
+** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       on [Person].[Salesperson].[isActive] (Default Constraint)
+     Create
+       [Person].[CustomerAddress] (Table)
+       [Person].[CustomerEmail] (Table)
+       [Person].[CustomerPhone] (Table)
+       Default Constraint on [Person].[Salesperson].[isActive] (Default Constraint)
+       Default Constraint on [Person].[CustomerAddress].[Id] (Default Constraint)
+       Default Constraint on [Person].[CustomerEmail].[Id] (Default Constraint)
+       [Person].[PK_CustomerPhone_Id] (Default Constraint)
+       [Person].[FK_CustomerAddress_CustomerId_Customer_Id] (Foreign Key)
+       [Person].[FK_CustomerEmail_CustomerId_Customer_Id] (Foreign Key)
+       [Person].[FK_CustomerPhone_CustomerId_Customer_Id] (Foreign Key)
+
+** Supporting actions

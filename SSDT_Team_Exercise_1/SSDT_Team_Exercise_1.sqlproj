@@ -89,8 +89,10 @@
     <Build Include="Person\Tables\CustomerEmail.sql" />
     <Build Include="Person\Tables\CustomerPhone.sql" />
     <Build Include="Person\Tables\CustomerAddress.sql" />
+    <PostDeploy Include="DataSeedHelper.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SSDT_Team_Exercise_1.publish.xml" />
+    <None Include="SSDT_Team_Exercise_1_DEV_LOCAL.publish.xml" />
   </ItemGroup>
 </Project>
