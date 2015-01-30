@@ -5,6 +5,11 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SSDT_Team_Exercise_1", "SSDT_Team_Exercise_1\SSDT_Team_Exercise_1.sqlproj", "{41B7F583-70BC-43CF-90C5-F9568CB1F772}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Questions", "Project Questions", "{A7047CF9-0D6A-4488-B0AA-D5474650949A}"
+	ProjectSection(SolutionItems) = preProject
+		SSDT_Team_Exercise_Qs.txt = SSDT_Team_Exercise_Qs.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

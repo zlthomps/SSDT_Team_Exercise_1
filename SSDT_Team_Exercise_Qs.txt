@@ -1,0 +1,6 @@
+1) How will you create a base snapshot and commit of this point of time after Activity Commit changes Sprint 1.?
+
+In order to create the database snapshot (.dacpac), I used the Extract Data Tier Application Dialog. I followed these steps:
+- First I published my project to my (localdb)\Projects instance
+- Next I right clicked on my SSDT_Team_Exercise_1 database in SQL Server Object Explorer within VS and Executed the Extra Data Tier Application Dialog
+- I then created a Git Tag for Sprint 1 by selecting Git Browse, then right clicking on my latest commit and selecting Tag
