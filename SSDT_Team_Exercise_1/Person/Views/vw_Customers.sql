@@ -1,8 +1,8 @@
 ﻿CREATE VIEW [Person].[vw_Customers]
 	AS
 
-	SELECT Person.FName AS FirstName,
-		   Person.LName AS LastName
-    FROM Person.Customer AS Customer
-	INNER JOIN Person.Person AS Person
-		ON Customer.PersonId = Person.Id
+	SELECT Per.FName AS FirstName,
+		   Per.LName AS LastName
+    FROM Person.Customer AS Cust
+	INNER JOIN Person.Person AS Per
+		ON Cust.PersonId = Per.Id

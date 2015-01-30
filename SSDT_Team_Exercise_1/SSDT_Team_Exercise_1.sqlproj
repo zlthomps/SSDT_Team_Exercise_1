@@ -67,6 +67,8 @@
     <Folder Include="Inventory" />
     <Folder Include="Sales" />
     <Folder Include="Person\Views" />
+    <Folder Include="Inventory\Views" />
+    <Folder Include="Sales\Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Inventory\Inventory.sql" />
@@ -82,6 +84,8 @@
     <Build Include="Sales\OpportunityType.sql" />
     <Build Include="Sales\Opportunity.sql" />
     <Build Include="Person\Views\vw_Customers.sql" />
+    <Build Include="Inventory\Views\vw_Vehicles.sql" />
+    <Build Include="Sales\Procedures\usp_OpportunitiesByType.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SSDT_Team_Exercise_1.publish.xml" />
