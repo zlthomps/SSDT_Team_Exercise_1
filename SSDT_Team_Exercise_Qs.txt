@@ -2,5 +2,13 @@
 
 In order to create the database snapshot (.dacpac), I used the Extract Data Tier Application Dialog. I followed these steps:
 - First I published my project to my (localdb)\Projects instance
-- Next I right clicked on my SSDT_Team_Exercise_1 database in SQL Server Object Explorer within VS and Executed the Extra Data Tier Application Dialog
+- Next I right clicked on my SSDT_Team_Exercise_1 localdb database in SQL Server Object Explorer within VS and Executed the Extract Data Tier Application Dialog
 - I then created a Git Tag for Sprint 1 by selecting Git Browse, then right clicking on my latest commit and selecting Tag
+
+2) How will you deploy the schema to your local development instance of SQL Server after step Commit changes Sprint 2.? Deploy the initial schema 
+to your development instance of SQL Server.
+
+To deploy my schema to my local development instance I followed the below steps:
+- Right Click on Project > Publsih..
+- Created a Profile to point to my local SQL DB Instance
+- Then published the project to my local DB Instance

@@ -69,6 +69,7 @@
     <Folder Include="Person\Views" />
     <Folder Include="Inventory\Views" />
     <Folder Include="Sales\Procedures" />
+    <Folder Include="Sales\Views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Inventory\Inventory.sql" />
@@ -90,6 +91,7 @@
     <Build Include="Person\Tables\CustomerPhone.sql" />
     <Build Include="Person\Tables\CustomerAddress.sql" />
     <PostDeploy Include="DataSeedHelper.sql" />
+    <Build Include="Sales\Views\vw_CustomersOpportunities.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SSDT_Team_Exercise_1.publish.xml" />
