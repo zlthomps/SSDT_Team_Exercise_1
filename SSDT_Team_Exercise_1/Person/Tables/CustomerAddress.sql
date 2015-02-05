@@ -6,5 +6,6 @@
 	StateProvince NVARCHAR(50) NOT NULL,
 	PostalCode NVARCHAR(50) NOT NULL,
 	Country NVARCHAR(50),
-	CustomerId UNIQUEIDENTIFIER NOT NULL CONSTRAINT FK_CustomerAddress_CustomerId_Customer_Id FOREIGN KEY REFERENCES Person.Customer(Id)
+	CustomerId UNIQUEIDENTIFIER NOT NULL CONSTRAINT FK_CustomerAddress_CustomerId_Customer_Id FOREIGN KEY REFERENCES Person.Customer(Id),
+	StateProvinceId UNIQUEIDENTIFIER NULL CONSTRAINT FK_CustomerAddress_StateProvinceId_StateProvince_Id FOREIGN KEY REFERENCES dbo.StateProvince(Id)
 )

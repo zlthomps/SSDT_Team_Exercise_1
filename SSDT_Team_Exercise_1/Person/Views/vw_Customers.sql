@@ -1,8 +1,8 @@
 ﻿CREATE VIEW [Person].[vw_Customers]
 	AS
 
-SELECT  Person.FName AS FirstName ,
-        Person.LName AS LastName ,
+SELECT  Person.[FirstName] AS FirstName ,
+        Person.[LastName] AS LastName ,
         ISNULL(Email.EmailAddress,N'') AS Email,
 		ISNULL(Phone.PhoneNumber,N'') AS Phone,
 		ISNULL(Address.Street + SPACE(1) + Address.City + N',' + Address.StateProvince + SPACE(1) + Address.PostalCode,N'') AS [Address]

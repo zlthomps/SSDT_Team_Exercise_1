@@ -2,8 +2,8 @@
 	AS 
 	
 	SELECT 
-		Person.FName,
-		Person.LName,
+		Person.[FirstName],
+		Person.[LastName],
 		OppType.Name AS OppType,
 		Vehic.Year AS VehicleYear,
 		Make.Name AS Make,

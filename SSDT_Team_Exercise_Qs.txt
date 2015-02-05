@@ -12,3 +12,5 @@ To deploy my schema to my local development instance I followed the below steps:
 - Right Click on Project > Publsih..
 - Created a Profile to point to my local SQL DB Instance
 - Then published the project to my local DB Instance
+
+3) I used the Refactor > Rename process, as this feature conducts a smart rename which will find and update reference to the column or object you're renaming
