@@ -74,6 +74,7 @@
     <Folder Include="dbo\Tables" />
     <Folder Include="Scripts" />
     <Folder Include="Publish Profiles" />
+    <Folder Include="dacpacSnaps" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Inventory\Inventory.sql" />
@@ -103,6 +104,11 @@
   <ItemGroup>
     <None Include="Publish Profiles\SSDT_Team_Exercise_1.publish.xml" />
     <None Include="Publish Profiles\SSDT_Team_Exercise_1_DEV_LOCAL.publish.xml" />
+    <None Include="dacpacSnaps\SSDT_Team_Exercise_1%28Sprint1).dacpac" />
+    <None Include="dacpacSnaps\SSDT_Team_Exercise_1%28Sprint2).dacpac" />
+    <None Include="dacpacSnaps\SSDT_Team_Exercise_1%28Sprint3).dacpac" />
+    <None Include="dacpacSnaps\SSDT_Team_Exercise_1%28Sprint4).dacpac" />
+    <None Include="dacpacSnaps\SSDT_Team_Exercise_1%28Sprint4_Hotfix).dacpac" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="SSDT_Team_Exercise_1.refactorlog" />
