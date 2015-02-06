@@ -1,0 +1,35 @@
+﻿** Warnings
+     The object reference [Sales].[Opportunity].[id] differs only by case from the object definition
+       [Sales].[Opportunity].[Id].
+     The object reference [dbo].[Country].[id] differs only by case from the object definition [dbo].[Country].[Id].
+     The object reference [Inventory].[Make].[id] differs only by case from the object definition [Inventory].[Make].[Id].
+     The object reference [person].[CustomerAddress] differs only by case from the object definition
+       [Person].[CustomerAddress].
+     The object reference [person].[CustomerAddress].[CustomerId] differs only by case from the object definition
+       [Person].[CustomerAddress].[CustomerId].
+     The object reference [person].[CustomerAddress].[StateProvinceId] differs only by case from the object definition
+       [Person].[CustomerAddress].[StateProvinceId].
+     The object reference [person].[CustomerAddress].[Street] differs only by case from the object definition
+       [Person].[CustomerAddress].[Street].
+     The object reference [person].[CustomerAddress].[City] differs only by case from the object definition
+       [Person].[CustomerAddress].[City].
+     The object reference [person].[CustomerAddress].[PostalCode] differs only by case from the object definition
+       [Person].[CustomerAddress].[PostalCode].
+
+** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       on [Person].[Salesperson].[isActive] (Default Constraint)
+     Create
+       Default Constraint on [Person].[Salesperson].[isActive] (Default Constraint)
+
+** Supporting actions

@@ -97,7 +97,7 @@
     <Build Include="Sales\Views\vw_CustomersOpportunities.sql" />
     <Build Include="dbo\Tables\Country.sql" />
     <Build Include="dbo\Tables\StateProvince.sql" />
-    <PostDeploy Include="Scripts\DataSeedHelper.sql" />
+    <None Include="Scripts\DataSeedHelper.sql" />
     <None Include="Scripts\SeedCountryStateProvince.sql" />
   </ItemGroup>
   <ItemGroup>
