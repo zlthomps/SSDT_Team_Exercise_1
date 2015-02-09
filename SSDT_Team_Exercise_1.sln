@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project Questions", "Projec
 		SSDT_Team_Exercise_Qs.txt = SSDT_Team_Exercise_Qs.txt
 	EndProjectSection
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SingleSignOn", "SingleSignOn\SingleSignOn.sqlproj", "{9CBFE06E-EAD3-4315-B964-6C163E28F418}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,12 @@ Global
 		{41B7F583-70BC-43CF-90C5-F9568CB1F772}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41B7F583-70BC-43CF-90C5-F9568CB1F772}.Release|Any CPU.Build.0 = Release|Any CPU
 		{41B7F583-70BC-43CF-90C5-F9568CB1F772}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9CBFE06E-EAD3-4315-B964-6C163E28F418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CBFE06E-EAD3-4315-B964-6C163E28F418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CBFE06E-EAD3-4315-B964-6C163E28F418}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9CBFE06E-EAD3-4315-B964-6C163E28F418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CBFE06E-EAD3-4315-B964-6C163E28F418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CBFE06E-EAD3-4315-B964-6C163E28F418}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

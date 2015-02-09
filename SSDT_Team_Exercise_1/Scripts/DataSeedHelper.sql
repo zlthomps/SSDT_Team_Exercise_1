@@ -1,5 +1,5 @@
 ﻿
-
+-- Color Seed Data!!!!
 IF ( SELECT COUNT(*)
      FROM   Inventory.Make
    ) = 0
@@ -90,13 +90,15 @@ IF ( SELECT COUNT(*)
 --Update Script
 --Refactor CustomerAddress
 
-IF EXISTS ( SELECT  *
-            FROM    sys.columns AS sc
-                    INNER JOIN sys.tables AS st ON sc.OBJECT_ID = st.object_id
-            WHERE   sc.name = 'StateProvinceId'
-                    AND st.name = 'CustomerAddress' )
+IF ( SELECT COUNT(*)
+     FROM   sys.columns AS sc
+            INNER JOIN sys.tables AS st ON sc.object_id = st.object_id
+     WHERE  sc.name IN ( 'StateProvinceId', 'Country', 'StateProvince' )
+            AND st.name = 'CustomerAddress'
+   ) = 3
     BEGIN
-
+        EXEC sp_executesql N'
+		
         UPDATE  Person.CustomerAddress
         SET     StateProvinceId = sp.Id
         FROM    dbo.StateProvince AS sp
@@ -105,9 +107,19 @@ IF EXISTS ( SELECT  *
                                                            AND sp.Name = ca.StateProvince
         WHERE   ca.StateProvinceId IS NULL
 
+        UPDATE  person.CustomerAddress
+        SET     Country = NULL ,
+                StateProvince = NULL
+        FROM    Person.CustomerAddress
+        WHERE   StateProvinceId IS NOT NULL'
+
+		--Try and let the solution build without data loss, however if stateprovinceId is really null, we likely want it to fail
+
     END
 
 GO
+
+
 
 
 
