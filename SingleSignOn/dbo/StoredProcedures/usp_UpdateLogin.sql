@@ -3,5 +3,6 @@
 
 AS
 
-UPDATE [User] SET [Password] = @NewPassword
+UPDATE [User] 
+SET [Password] = @NewPassword
 WHERE UserName = @Username
