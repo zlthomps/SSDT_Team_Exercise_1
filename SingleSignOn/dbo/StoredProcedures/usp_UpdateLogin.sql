@@ -3,6 +3,6 @@
 
 AS
 
-UPDATE [User] 
+UPDATE [dbo].[User] 
 SET [Password] = @NewPassword
 WHERE UserName = @Username

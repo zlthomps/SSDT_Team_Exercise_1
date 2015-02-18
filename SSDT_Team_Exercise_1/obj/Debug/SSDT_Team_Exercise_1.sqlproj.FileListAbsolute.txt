@@ -3,3 +3,7 @@ C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SSDT_Team_Exercise_1\bin\Debug
 C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SSDT_Team_Exercise_1\bin\Debug\SSDT_Team_Exercise_1.pdb
 C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SSDT_Team_Exercise_1\obj\Debug\SSDT_Team_Exercise_1.dll
 C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SSDT_Team_Exercise_1\obj\Debug\SSDT_Team_Exercise_1.pdb
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SSDT_Team_Exercise_1\bin\Debug\SingleSignOn.dll
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SSDT_Team_Exercise_1\bin\Debug\SingleSignOn.pdb
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SSDT_Team_Exercise_1\bin\Debug\SingleSignOn.dacpac
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SSDT_Team_Exercise_1\obj\Debug\SSDT_Team_Exercise_1.sqlprojResolveAssemblyReference.cache

@@ -7,4 +7,9 @@
     <ProfileVersionNumber>1</ProfileVersionNumber>
     <TargetConnectionString>Data Source=localhost;Integrated Security=True;Pooling=False</TargetConnectionString>
   </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="SingleSignOn">
+      <Value>SingleSignOn</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
 </Project>

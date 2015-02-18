@@ -13,10 +13,11 @@ SET NUMERIC_ROUNDABORT OFF;
 
 
 GO
+:setvar SingleSignOn "SingleSignOn"
 :setvar DatabaseName "SSDT_Team_Exercise_1"
 :setvar DefaultFilePrefix "SSDT_Team_Exercise_1"
-:setvar DefaultDataPath "C:\Users\zthompson\AppData\Local\Microsoft\VisualStudio\SSDT\SSDT_Team_Exercise_1\"
-:setvar DefaultLogPath "C:\Users\zthompson\AppData\Local\Microsoft\VisualStudio\SSDT\SSDT_Team_Exercise_1\"
+:setvar DefaultDataPath "C:\Users\zthompson\AppData\Local\Microsoft\VisualStudio\SSDT\SSDT_Team_Exercise_1"
+:setvar DefaultLogPath "C:\Users\zthompson\AppData\Local\Microsoft\VisualStudio\SSDT\SSDT_Team_Exercise_1"
 
 GO
 :on error exit
@@ -36,59 +37,24 @@ IF N'$(__IsSqlCmdEnabled)' NOT LIKE N'True'
 
 
 GO
-IF EXISTS (SELECT 1
-           FROM   [master].[dbo].[sysdatabases]
-           WHERE  [name] = N'$(DatabaseName)')
-    BEGIN
-        ALTER DATABASE [$(DatabaseName)]
-            SET ARITHABORT ON,
-                CONCAT_NULL_YIELDS_NULL ON,
-                CURSOR_DEFAULT LOCAL 
-            WITH ROLLBACK IMMEDIATE;
-    END
-
-
-GO
-IF EXISTS (SELECT 1
-           FROM   [master].[dbo].[sysdatabases]
-           WHERE  [name] = N'$(DatabaseName)')
-    BEGIN
-        ALTER DATABASE [$(DatabaseName)]
-            SET PAGE_VERIFY NONE,
-                DISABLE_BROKER 
-            WITH ROLLBACK IMMEDIATE;
-    END
-
-
-GO
 USE [$(DatabaseName)];
 
 
 GO
-PRINT N'Creating [Inventory]...';
+PRINT N'Dropping <unnamed>...';
 
 
 GO
-CREATE SCHEMA [Inventory]
-    AUTHORIZATION [dbo];
+ALTER TABLE [Person].[Salesperson] DROP CONSTRAINT [DF__Salespers__isAct__5812160E];
 
 
 GO
-PRINT N'Creating [Person]...';
+PRINT N'Creating unnamed constraint on [Person].[Salesperson]...';
 
 
 GO
-CREATE SCHEMA [Person]
-    AUTHORIZATION [dbo];
-
-
-GO
-PRINT N'Creating [Sales]...';
-
-
-GO
-CREATE SCHEMA [Sales]
-    AUTHORIZATION [dbo];
+ALTER TABLE [Person].[Salesperson]
+    ADD DEFAULT CAST(1 AS BIT) FOR [isActive];
 
 
 GO

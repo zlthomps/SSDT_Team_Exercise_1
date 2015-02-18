@@ -75,6 +75,7 @@
     <Folder Include="Scripts" />
     <Folder Include="Publish Profiles" />
     <Folder Include="dacpacSnaps" />
+    <Folder Include="Person\Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Inventory\Inventory.sql" />
@@ -100,6 +101,8 @@
     <Build Include="dbo\Tables\StateProvince.sql" />
     <None Include="Scripts\DataSeedHelper.sql" />
     <None Include="Scripts\SeedCountryStateProvince.sql" />
+    <Build Include="Person\Procedures\usp_SelectLoginInformation.sql" />
+    <Build Include="Person\Views\vw_SelectSalespersonLogin.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Publish Profiles\SSDT_Team_Exercise_1.publish.xml" />
@@ -112,5 +115,20 @@
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="SSDT_Team_Exercise_1.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SingleSignOn\SingleSignOn.sqlproj">
+      <Name>SingleSignOn</Name>
+      <Project>{9cbfe06e-ead3-4315-b964-6c163e28f418}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>SingleSignOn</DatabaseSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="SingleSignOn">
+      <DefaultValue>SingleSignOn</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
   </ItemGroup>
 </Project>
