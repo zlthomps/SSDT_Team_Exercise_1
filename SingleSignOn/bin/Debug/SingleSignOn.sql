@@ -15,8 +15,8 @@ SET NUMERIC_ROUNDABORT OFF;
 GO
 :setvar DatabaseName "SingleSignOn"
 :setvar DefaultFilePrefix "SingleSignOn"
-:setvar DefaultDataPath "C:\Users\zthompson\AppData\Local\Microsoft\VisualStudio\SSDT\SSDT_Team_Exercise_1"
-:setvar DefaultLogPath "C:\Users\zthompson\AppData\Local\Microsoft\VisualStudio\SSDT\SSDT_Team_Exercise_1"
+:setvar DefaultDataPath "C:\Users\zthompson\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\ProjectsV12\"
+:setvar DefaultLogPath "C:\Users\zthompson\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\ProjectsV12\"
 
 GO
 :on error exit

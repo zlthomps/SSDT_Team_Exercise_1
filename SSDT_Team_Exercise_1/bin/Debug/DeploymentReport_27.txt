@@ -1,0 +1,77 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [Inventory] (Schema)
+       [Person] (Schema)
+       [Sales] (Schema)
+       [Inventory].[Vehicle] (Table)
+       [Inventory].[Color] (Table)
+       [Inventory].[Make] (Table)
+       [Inventory].[Model] (Table)
+       [Person].[CustomerAddress] (Table)
+       [Person].[CustomerPhone] (Table)
+       [Person].[CustomerEmail] (Table)
+       [Person].[Customer] (Table)
+       [Person].[Salesperson] (Table)
+       [Person].[Person] (Table)
+       [Person].[Person].[IX_Person_IndexId] (Index)
+       [Sales].[Opportunity] (Table)
+       [Sales].[OpportunityType] (Table)
+       [dbo].[Country] (Table)
+       [dbo].[StateProvince] (Table)
+       Default Constraint: unnamed constraint on [Inventory].[Vehicle] (Default Constraint)
+       Default Constraint: unnamed constraint on [Inventory].[Color] (Default Constraint)
+       Default Constraint: unnamed constraint on [Inventory].[Color] (Default Constraint)
+       Default Constraint: unnamed constraint on [Inventory].[Make] (Default Constraint)
+       Default Constraint: unnamed constraint on [Inventory].[Make] (Default Constraint)
+       Default Constraint: unnamed constraint on [Inventory].[Model] (Default Constraint)
+       Default Constraint: unnamed constraint on [Inventory].[Model] (Default Constraint)
+       Default Constraint: unnamed constraint on [Person].[CustomerAddress] (Default Constraint)
+       [Person].[PK_CustomerPhone_Id] (Default Constraint)
+       Default Constraint: unnamed constraint on [Person].[CustomerEmail] (Default Constraint)
+       Default Constraint: unnamed constraint on [Person].[Customer] (Default Constraint)
+       Default Constraint: unnamed constraint on [Person].[Customer] (Default Constraint)
+       Default Constraint: unnamed constraint on [Person].[Salesperson] (Default Constraint)
+       Default Constraint: unnamed constraint on [Person].[Salesperson] (Default Constraint)
+       Default Constraint: unnamed constraint on [Person].[Salesperson] (Default Constraint)
+       Default Constraint: unnamed constraint on [Person].[Person] (Default Constraint)
+       Default Constraint: unnamed constraint on [Sales].[Opportunity] (Default Constraint)
+       Default Constraint: unnamed constraint on [Sales].[Opportunity] (Default Constraint)
+       Default Constraint: unnamed constraint on [Sales].[OpportunityType] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Country] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[Country] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[StateProvince] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[StateProvince] (Default Constraint)
+       [Inventory].[FK_Vehicle_MakeId_Make_Id] (Foreign Key)
+       [Inventory].[FK_Vehicle_ModelId_Model_Id] (Foreign Key)
+       [Inventory].[FK_Vehicle_ColorId_Color_Id] (Foreign Key)
+       [Inventory].[FK_Model_MakeId_Make_Id] (Foreign Key)
+       [Person].[FK_CustomerAddress_CustomerId_Customer_Id] (Foreign Key)
+       [Person].[FK_CustomerAddress_StateProvinceId_StateProvince_Id] (Foreign Key)
+       [Person].[FK_CustomerPhone_CustomerId_Customer_Id] (Foreign Key)
+       [Person].[FK_CustomerEmail_CustomerId_Customer_Id] (Foreign Key)
+       [Person].[FK_Customer_PersonId_Person_Id] (Foreign Key)
+       [Person].[FK_Customer_SalespersonId_Salesperson_Id] (Foreign Key)
+       [Person].[FK_Salesperson_PersonId_Person_Id] (Foreign Key)
+       [Sales].[FK_Opportunity_CustomerId_Customer_Id] (Foreign Key)
+       [Sales].[FK_Opportunity_VehicleId_Vehicle_Id] (Foreign Key)
+       [Sales].[FK_Opportunity_OpportunityTypeId_OpportunityType_Id] (Foreign Key)
+       [dbo].[FK_StateProvince_CountryId_Country_Id] (Foreign Key)
+       [Person].[CK_Person_ValidateAge] (Check Constraint)
+       [Inventory].[vw_Vehicles] (View)
+       [Person].[vw_SelectSalespersonLogin] (View)
+       [Person].[vw_Customers] (View)
+       [Sales].[vw_CustomersOpportunities] (View)
+       [Sales].[usp_OpportunitiesByType] (Procedure)
+       [dbo].[usp_SelectLoginInformation] (Procedure)
+
+** Supporting actions

@@ -1,0 +1,8 @@
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\UnitTest_SSO\bin\Debug\UnitTest_SSO.dll.config
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\UnitTest_SSO\bin\Debug\UnitTest_SSO.dll
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\UnitTest_SSO\bin\Debug\UnitTest_SSO.pdb
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\UnitTest_SSO\obj\Debug\UnitTest_SSO.csprojResolveAssemblyReference.cache
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\UnitTest_SSO\obj\Debug\UnitTest_SSO.dll
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\UnitTest_SSO\obj\Debug\UnitTest_SSO.pdb
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\UnitTest_SSO\obj\Debug\UnitTest_SSO.SqlServerUnitTest_SSO.resources
+C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\UnitTest_SSO\obj\Debug\UnitTest_SSO.csproj.GenerateResource.Cache

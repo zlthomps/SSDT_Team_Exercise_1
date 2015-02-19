@@ -2,7 +2,7 @@
 
 AS
 
-SELECT o.id,
+SELECT o.Id,
 	   o.CustomerId
 FROM Sales.Opportunity AS o
 INNER JOIN Sales.OpportunityType AS ot

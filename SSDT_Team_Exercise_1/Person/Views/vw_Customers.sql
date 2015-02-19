@@ -9,7 +9,7 @@ SELECT  Person.[FirstName] AS FirstName ,
 FROM    Person.Person AS Person
         LEFT OUTER JOIN Person.Customer AS Customer ON Customer.PersonId = Person.Id
         LEFT OUTER JOIN Person.CustomerEmail AS Email ON Email.CustomerId = Customer.Id
-		LEFT OUTER JOIN person.CustomerAddress AS [Address] ON Address.CustomerId = Customer.Id
+		LEFT OUTER JOIN Person.CustomerAddress AS [Address] ON Address.CustomerId = Customer.Id
 		LEFT OUTER JOIN Person.CustomerPhone AS Phone ON Phone.CustomerId = Customer.Id
 		LEFT OUTER JOIN dbo.StateProvince AS StateProv ON [Address].StateProvinceId = StateProv.Id
 

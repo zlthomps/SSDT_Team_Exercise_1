@@ -60,6 +60,7 @@
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo\StoredProcedures" />
+    <Folder Include="PublishProfile\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Role.sql" />
@@ -69,5 +70,8 @@
     <Build Include="dbo\StoredProcedures\usp_DeleteRole.sql" />
     <Build Include="dbo\StoredProcedures\usp_InsertLogin.sql" />
     <Build Include="dbo\StoredProcedures\usp_UpdateLogin.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PublishProfile\SingleSignOn.publish.xml" />
   </ItemGroup>
 </Project>
