@@ -3,4 +3,3 @@ C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\bin\Debug\SingleS
 C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\bin\Debug\SingleSignOn.pdb
 C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\obj\Debug\SingleSignOn.dll
 C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\obj\Debug\SingleSignOn.pdb
-C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\obj\Debug\SingleSignOn.sqlprojResolveAssemblyReference.cache

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Problems>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from NVarChar(55) to NVarChar(50).</ProblemDescription>
+    <SourceFile>C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\dbo\StoredProcedures\usp_InsertLogin.sql</SourceFile>
+    <Line>21</Line>
+    <Column>15</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from NVarChar(55) to NVarChar(50).</ProblemDescription>
+    <SourceFile>C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\dbo\StoredProcedures\usp_InsertLogin.sql</SourceFile>
+    <Line>22</Line>
+    <Column>15</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0007</Rule>
+    <ProblemDescription>Nullable columns can cause final results to be evaluated as NULL for the predicate.</ProblemDescription>
+    <SourceFile>C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\dbo\StoredProcedures\usp_DeleteRole.sql</SourceFile>
+    <Line>9</Line>
+    <Column>12</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from NVarChar(55) to NVarChar(50).</ProblemDescription>
+    <SourceFile>C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\dbo\StoredProcedures\usp_UpdateRole.sql</SourceFile>
+    <Line>5</Line>
+    <Column>20</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from NVarChar(55) to NVarChar(50).</ProblemDescription>
+    <SourceFile>C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\dbo\StoredProcedures\usp_InsertRole.sql</SourceFile>
+    <Line>5</Line>
+    <Column>9</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from NVarChar(55) to NVarChar(50).</ProblemDescription>
+    <SourceFile>C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\dbo\StoredProcedures\usp_UpdateLogin.sql</SourceFile>
+    <Line>7</Line>
+    <Column>5</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+</Problems>
