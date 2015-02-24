@@ -46,6 +46,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunSqlCodeAnalysis>True</RunSqlCodeAnalysis>
   </PropertyGroup>
   <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
   <PropertyGroup>
@@ -103,6 +104,8 @@
     <None Include="Scripts\SeedCountryStateProvince.sql" />
     <Build Include="Person\Procedures\usp_SelectLoginInformation.sql" />
     <Build Include="Person\Views\vw_SelectSalespersonLogin.sql" />
+    <Build Include="Person\Procedures\sp_UpdateSalesPersonLogin.sql" />
+    <Build Include="Inventory\Views\vw_SelectVehicles.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Publish Profiles\SSDT_Team_Exercise_1.publish.xml" />
