@@ -77,6 +77,9 @@
     <Folder Include="Publish Profiles" />
     <Folder Include="dacpacSnaps" />
     <Folder Include="Person\Procedures" />
+    <Folder Include="Archive" />
+    <Folder Include="Security\Archive" />
+    <Folder Include="Archive\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Inventory\Inventory.sql" />
@@ -106,6 +109,9 @@
     <Build Include="Person\Views\vw_SelectSalespersonLogin.sql" />
     <Build Include="Person\Procedures\sp_UpdateSalesPersonLogin.sql" />
     <Build Include="Inventory\Views\vw_SelectVehicles.sql" />
+    <Build Include="Person\Tables\CustomerNote.sql" />
+    <Build Include="Security\Archive\Archive.sql" />
+    <Build Include="Archive\Tables\CustomerNoteHistory.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Publish Profiles\SSDT_Team_Exercise_1.publish.xml" />

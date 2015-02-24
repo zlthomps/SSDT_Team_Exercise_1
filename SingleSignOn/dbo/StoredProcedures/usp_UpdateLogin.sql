@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[usp_UpdateLogin]
-@Username NVARCHAR(55), @NewPassword NVARCHAR(55)
+@Username NVARCHAR(50), @NewPassword NVARCHAR(50)
 
 AS
 

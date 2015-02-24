@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE Person.sp_UpdateSalespersonLogin
+﻿CREATE PROCEDURE Person.usp_UpdateSalespersonLogin
     @NewLoginId UNIQUEIDENTIFIER ,
     @SalespersonId UNIQUEIDENTIFIER
 AS

@@ -3,7 +3,3 @@ C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\bin\Debug\SingleS
 C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\bin\Debug\SingleSignOn.pdb
 C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\obj\Debug\SingleSignOn.dll
 C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\obj\Debug\SingleSignOn.pdb
-C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\obj\Debug\Model.xml
-C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\obj\Debug\refactor.xml
-C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\obj\Debug\postdeploy.sql
-C:\Users\zthompson\Documents\SSDT_Team_Exercise_1\SingleSignOn\obj\Debug\predeploy.sql

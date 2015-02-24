@@ -1,7 +1,7 @@
 ﻿CREATE PROCEDURE dbo.usp_InsertLogin
-    @User NVARCHAR(55) ,
-    @Password NVARCHAR(55) ,
-    @RoleName NVARCHAR(55) ,
+    @User NVARCHAR(50) ,
+    @Password NVARCHAR(50) ,
+    @RoleName NVARCHAR(50) ,
     @LastLogonDate DATE ,
     @CreatedDate DATE
 AS
