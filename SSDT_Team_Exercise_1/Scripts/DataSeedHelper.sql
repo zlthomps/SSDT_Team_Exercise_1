@@ -99,19 +99,19 @@ IF ( SELECT COUNT(*)
     BEGIN
         EXEC sp_executesql N'
 		
-        UPDATE  Person.CustomerAddress
-        SET     StateProvinceId = sp.Id
-        FROM    dbo.StateProvince AS sp
-                INNER JOIN dbo.Country AS c ON c.Id = sp.CountryId
-                INNER JOIN person.CustomerAddress AS ca ON ca.Country = c.Name
-                                                           AND sp.Name = ca.StateProvince
-        WHERE   ca.StateProvinceId IS NULL
+			UPDATE  Person.CustomerAddress
+			SET     StateProvinceId = sp.Id
+			FROM    dbo.StateProvince AS sp
+					INNER JOIN dbo.Country AS c ON c.Id = sp.CountryId
+					INNER JOIN person.CustomerAddress AS ca ON ca.Country = c.Name
+															   AND sp.Name = ca.StateProvince
+			WHERE   ca.StateProvinceId IS NULL
 
-        UPDATE  person.CustomerAddress
-        SET     Country = NULL ,
-                StateProvince = NULL
-        FROM    Person.CustomerAddress
-        WHERE   StateProvinceId IS NOT NULL'
+			UPDATE  person.CustomerAddress
+			SET     Country = NULL ,
+					StateProvince = NULL
+			FROM    Person.CustomerAddress
+			WHERE   StateProvinceId IS NOT NULL'
 
 		--Try and let the solution build without data loss, however if stateprovinceId is really null, we likely want it to fail
 

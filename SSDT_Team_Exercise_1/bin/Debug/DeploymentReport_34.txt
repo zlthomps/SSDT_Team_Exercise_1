@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [Person].[Salesperson] (Default Constraint)
+     Create
+       Default Constraint: unnamed constraint on [Person].[Salesperson] (Default Constraint)
+       [Person].[vw_Customers] (View)
+       [Person].[vw_SelectSalespersonLogin] (View)
+       [Sales].[vw_CustomersOpportunities] (View)
+       [dbo].[usp_ArchiveCustomerNote] (Procedure)
+       [dbo].[usp_ArchiveCustomerNoteSwitch] (Procedure)
+       [dbo].[usp_SelectLoginInformation] (Procedure)
+       [Person].[usp_UpdateSalespersonLogin] (Procedure)
+       [Sales].[usp_OpportunitiesByType] (Procedure)
+
+** Supporting actions

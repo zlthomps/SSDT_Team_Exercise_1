@@ -1,0 +1,46 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [Archive].[CustomerNoteHistory]
+       [Person].[CustomerNote]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [Archive].[CustomerNoteHistory] (Default Constraint)
+       unnamed constraint on [Person].[Salesperson] (Default Constraint)
+       [Person].[chk_CreatedDate] (Check Constraint)
+       [CustNoteHisPF] (Partition Function)
+       [CustNotePF] (Partition Function)
+     Unbind table
+       [Person].[CustomerNote] (Table)
+     Create
+       [CustNoteHisPF] (Partition Function)
+       [CustNotePF] (Partition Function)
+       Default Constraint: unnamed constraint on [Person].[Salesperson] (Default Constraint)
+       Default Constraint: unnamed constraint on [Person].[CustomerNote] (Default Constraint)
+       [dbo].[usp_ArchiveCustomerNote] (Procedure)
+     Table rebuild
+       [Person].[CustomerNote] (Table)
+     Alter
+       [dbo].[usp_ArchiveCustomerNoteSwitch] (Procedure)
+
+** Supporting actions
+     Drop
+       [Archive].[FK_CustomerNoteHistory_CustomerId_Customer_Id] (Foreign Key)
+       [Person].[FK_CustomerNote_CustomerId_Customer_Id] (Foreign Key)
+       [CustNoteHistPS] (Partition Scheme)
+       [CustNotePS] (Partition Scheme)
+     Unbind table
+       [Archive].[CustomerNoteHistory] (Table)
+     Create
+       [CustNoteHistPS] (Partition Scheme)
+       [CustNotePS] (Partition Scheme)
+       [Archive].[FK_CustomerNoteHistory_CustomerId_Customer_Id] (Foreign Key)
+       [Person].[FK_CustomerNote_CustomerId_Customer_Id] (Foreign Key)
+     Table rebuild
+       [Archive].[CustomerNoteHistory] (Table)

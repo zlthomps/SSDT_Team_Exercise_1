@@ -14,3 +14,25 @@ To deploy my schema to my local development instance I followed the below steps:
 - Then published the project to my local dev DB Instance
 
 3) I used the Refactor > Rename process, as this feature conducts a smart rename which will find and update reference to the column or object you're renaming
+
+4) I created a Linked Server between LocalDB and my Development Instance in order to query acrross database servers. I created all necessary inner joins in order to complete necessary lookups for CountryId and StateProvinceId on CountryRegionCode, as all tables have this column in common.
+
+5) I used SSDT to created a database reference, this allows SSDT to use sqlcmd variables and parases values when the project builds or is published
+
+6) I received build warnings due to SELECT * showing up in view, as well as for other reasons, this is due to code analysis being enabled.
+
+7) 
+Sprint -3 602550452e7d89c6653af5add1fcc4106407d000
+Sprint -6 a0bda63ea12420a0f842b9e8a7666e44c0f03b80
+
+I used github.com web-based compare tool to compare the commit hashes for Sprint 3 and 6
+-Country and state province refactor
+-CustomerAddress and InventoryMake FK
+-Sprint4 HotFix
+-Adding Single Sign On Project
+-Adding dacpac for Sprint 5
+-Added Unit Testing Project
+
+8) The same amount of partitions we started with. 
+
+9) Sliding Windows because its as simpily updating meta-data pointers as opposed to physically moving data pages and datal

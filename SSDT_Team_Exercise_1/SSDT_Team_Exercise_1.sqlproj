@@ -80,6 +80,7 @@
     <Folder Include="Archive" />
     <Folder Include="Security\Archive" />
     <Folder Include="Archive\Tables" />
+    <Folder Include="Partitioning Objects" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Inventory\Inventory.sql" />
@@ -112,6 +113,12 @@
     <Build Include="Person\Tables\CustomerNote.sql" />
     <Build Include="Security\Archive\Archive.sql" />
     <Build Include="Archive\Tables\CustomerNoteHistory.sql" />
+    <Build Include="Person\Procedures\usp_ArchiveCustomerNote.sql" />
+    <Build Include="Partitioning Objects\CustNotePF.sql" />
+    <Build Include="Partitioning Objects\CustNotePS.sql" />
+    <Build Include="Partitioning Objects\CustNoteHisPF.sql" />
+    <Build Include="Partitioning Objects\CustNoteHistPS.sql" />
+    <Build Include="Partitioning Objects\usp_ArchiveCustomerNoteSwitch.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Publish Profiles\SSDT_Team_Exercise_1.publish.xml" />
@@ -139,5 +146,12 @@
       <DefaultValue>SingleSignOn</DefaultValue>
       <Value>$(SqlCmdVar__1)</Value>
     </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\110\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\110\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>
